@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VersaTech GLobal Solutions | Premier IT Consultancy in Kenya</title>
+    <link rel="icon" href="logo vt web white.png" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1454165804606-3aedd6f40b77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        .tech-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                        <img class="w-16 h-16" src="logo vt web white.png" alt="">
+                <span class="text-xl font-bold">VersaTech Solutions</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-200 transition">Home</a>
+                <a href="#services" class="hover:text-blue-200 transition">Services</a>
+                <a href="#about" class="hover:text-blue-200 transition">About</a>
+                <a href="#clients" class="hover:text-blue-200 transition">Clients</a>
+                <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+254 712 165 017" class="hidden md:flex items-center hover:text-blue-200">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>+254 712 165 017</span>
+                </a>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 py-2">
+            <a href="#home" class="block py-2 hover:text-blue-200 transition">Home</a>
+            <a href="#services" class="block py-2 hover:text-blue-200 transition">Services</a>
+            <a href="#about" class="block py-2 hover:text-blue-200 transition">About</a>
+            <a href="#clients" class="block py-2 hover:text-blue-200 transition">Clients</a>
+            <a href="#contact" class="block py-2 hover:text-blue-200 transition">Contact</a>
+            <a href="tel:+254 712 165 017" class="block py-2 hover:text-blue-200 transition">
+                <i class="fas fa-phone-alt mr-2"></i> +254 712 165 017
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32 flex items-center">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Innovative IT Solutions for Kenyan Businesses</h1>
+            <p class="text-xl md:text-2xl mb-8">Empowering your digital transformation journey with cutting-edge technology solutions</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition">Get Started</a>
+                <a href="#services" class="bg-transparent hover:bg-blue-900 border-2 border-white text-white font-bold py-3 px-6 rounded-full transition">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock technical support to keep your business running smoothly</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Security First</h3>
+                    <p class="text-gray-600">Robust cybersecurity solutions to protect your digital assets</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Innovative Approach</h3>
+                    <p class="text-gray-600">Tailored solutions leveraging the latest technologies for your unique needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Our IT Services</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Comprehensive IT solutions designed to drive your business forward in the digital age</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IT Consulting -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">IT Consulting</h3>
+                        <p class="text-gray-600 mb-4">Strategic technology planning and advisory services to align IT with your business goals.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Digital transformation strategy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Technology roadmap development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>IT infrastructure assessment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Cloud Solutions -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-cloud text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive cloud services including migration, management, and optimization.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Cloud migration services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>AWS, Azure & Google Cloud expertise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Hybrid cloud architecture</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Cybersecurity</h3>
+                        <p class="text-gray-600 mb-4">Protect your business from evolving digital threats with our security solutions.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Vulnerability assessments</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Endpoint protection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Security awareness training</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Software Development -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Software Development</h3>
+                        <p class="text-gray-600 mb-4">Custom software solutions tailored to your specific business requirements.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Web & mobile applications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Enterprise software solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>API development & integration</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Data Analytics -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-database text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Data Analytics</h3>
+                        <p class="text-gray-600 mb-4">Transform your data into actionable insights for better decision-making.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Business intelligence solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Data visualization & reporting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Predictive analytics</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Managed IT Services -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-server text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Managed IT Services</h3>
+                        <p class="text-gray-600 mb-4">Proactive IT management to keep your systems running optimally.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Network monitoring & management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Help desk support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Patch management</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Specialized IT Solutions</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-network-wired text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Network Infrastructure</h3>
+                    <p class="text-gray-600 text-sm">Design, implementation, and management of secure networks</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">AI & Automation</h3>
+                    <p class="text-gray-600 text-sm">Implementing intelligent automation solutions</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Mobile Solutions</h3>
+                    <p class="text-gray-600 text-sm">iOS & Android app development</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">E-commerce Solutions</h3>
+                    <p class="text-gray-600 text-sm">Online store development & integration</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-vr-cardboard text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">AR/VR Development</h3>
+                    <p class="text-gray-600 text-sm">Immersive technology solutions</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-broadcast-tower text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">IoT Solutions</h3>
+                    <p class="text-gray-600 text-sm">Internet of Things implementation</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-project-diagram text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Blockchain</h3>
+                    <p class="text-gray-600 text-sm">Distributed ledger technology solutions</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="tech-icon bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-desktop text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">IT Staff Augmentation</h3>
+                    <p class="text-gray-600 text-sm">On-demand tech talent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tech team" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">About VersaTech Solutions</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2019 in Nairobi, Kenya, VersaTech Solutions has grown to become a leading IT consultancy firm serving businesses across East Africa. Our team of certified professionals brings together diverse expertise to deliver comprehensive technology solutions.</p>
+                    <p class="text-gray-600 mb-6">We pride ourselves on understanding the unique challenges faced by African businesses and providing tailored solutions that drive growth, efficiency, and competitive advantage in the digital economy.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-blue-600 text-2xl font-bold mb-1">250+</div>
+                            <div class="text-gray-600 text-sm">Successful Projects</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-blue-600 text-2xl font-bold mb-1">60+</div>
+                            <div class="text-gray-600 text-sm">Satisfied Clients</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-blue-600 text-2xl font-bold mb-1">25+</div>
+                            <div class="text-gray-600 text-sm">Certified Experts</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-blue-600 text-2xl font-bold mb-1">7</div>
+                            <div class="text-gray-600 text-sm">Years in Business</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Esteemed Clients</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">We've had the privilege of working with leading organizations across various industries in Kenya and beyond.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="flex justify-center">
+                    <img src="mirida_2-removebg-preview.png" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="ACCECIR_LOGO-removebg-preview.png" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="narok county logo.jpeg" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="enduata logo.png" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="grub_logo_on_white-removebg-preview.png" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="Davison Ltd.png" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="lighthouse logo.jpg" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="lightschool.jpg" alt="Client logo" class="h-16 object-contain grayscale hover:grayscale-0 transition">
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-50 rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Join our growing list of satisfied clients who have leveraged our IT expertise to achieve their business objectives.</p>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition inline-block">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"VersaTech Solutions transformed our outdated IT infrastructure into a modern, efficient system that has significantly improved our operations. Their team was professional and delivered beyond our expectations."</p>
+                    <div class="flex items-center">
+<img src="https://images.pexels.com/photos/936117/pexels-photo-936117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=100" alt="Businessman 4" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-bold">James Mwangi</div>
+                            <div class="text-gray-500 text-sm">CEO, JM Financial Solutions Ltd</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The cybersecurity solutions implemented by VersaTech Solutions have given us peace of mind. Their 24/7 monitoring has already prevented several potential breaches that could have been catastrophic."</p>
+                    <div class="flex items-center">
+<img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=100" alt="African Businesswoman" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-bold">Sarah Kamau</div>
+                            <div class="text-gray-500 text-sm">CTO, Max Retail Chain Kenya</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Our custom ERP system developed by VersaTech Solutions has streamlined our processes across 5 branches. Their understanding of our industry-specific needs was impressive."</p>
+                    <div class="flex items-center">
+<img src="https://randomuser.me/api/portraits/men/83.jpg" alt="Client" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-bold">David Ochieng</div>
+                            <div class="text-gray-500 text-sm">Operations Director, D&O Manufacturing Co.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <option value="">Select a service</option>
+                                <option value="consulting">IT Consulting</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="software">Software Development</option>
+                                <option value="data">Data Analytics</option>
+                                <option value="managed">Managed IT Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition w-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-6">Have questions about our services or want to discuss your IT needs? Our team is ready to help you find the right solutions for your business.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Nairobi Headquarters</h4>
+                                <p class="text-gray-600">ABC Place, 3rd Floor, Waiyaki Way, Westlands, Nairobi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-600">+254 712 165 017</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">info@versatechsolutions.co.ke</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Working Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p class="text-gray-600">Emergency Support: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-3">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61568919365852" class="bg-gray-100 hover:bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-facebook-f text-blue-600"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-twitter text-blue-600"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-linkedin-in text-blue-600"></i>
+                            </a>
+                            <a href="https://www.instagram.com/versatechglobal/" class="bg-gray-100 hover:bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-instagram text-blue-600"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8084773951304!2d36.80821531475399!3d-1.292385835979252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d71b30d3c1%3A0x94d39640450699f3!2sABC%20Place!5e0!3m2!1sen!2ske!4v1623841234567!5m2!1sen!2ske" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <img class="w-16 h-16" src="logo vt web white.png" alt="">  VersaTech Solutions
+                    </h3>
+                    <p class="text-gray-400 mb-4">Leading IT consultancy firm in Kenya providing innovative technology solutions since 2019.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cybersecurity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Software Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Data Analytics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#clients" class="text-gray-400 hover:text-white transition">Our Clients</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest tech insights and company updates.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-900">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 VersaTech Solutions. All rights reserved. | <a href="#" class="hover:text-white transition">Privacy Policy</a> | <a href="#" class="hover:text-white transition">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Form submission
+  const contactForm = document.querySelector('form');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Use actual line breaks (\n) here
+      const rawMessage = 
+        `New Contact Form Submission:\n\n` +
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Service Interested In: ${service}\n` +
+        `Message: ${message}`;
+
+      const encodedMessage = encodeURIComponent(rawMessage);
+      const phoneNumber = "254712165017"; // Use international format without '+'
+
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+
+      contactForm.reset();
+    });
+  }
+
+
+
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
